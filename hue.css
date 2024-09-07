@@ -1,0 +1,69 @@
+::selection {
+  background: deepskyblue;
+  color: #212;
+}
+
+:root {
+  background-color: #ee7;
+  background-image: linear-gradient(#e7f, #e1f, orange, #ee1, #ee7, deepskyblue, deepskyblue);
+  color: #111;
+}
+
+mark {
+  background-color: #e7f;
+  color: #111;
+}
+
+.thx {
+  color: #ee1;
+  background-color: purple;
+  background-image: linear-gradient(blueviolet, #518, darkviolet);
+}
+
+.upc {
+  color: #ee7;
+  background-color: midnightblue;
+  background-image: linear-gradient(blueviolet, darkblue, darkviolet);
+}
+
+.cold {
+  color: powderblue;
+}
+
+.poi {
+  color: #ee7;
+  background-color: darkmagenta;
+  background-image: linear-gradient(#d1d, #518, #c1c);
+}
+
+.ess {
+  background-image: linear-gradient(#de1, #7ed, #de1);
+}
+
+:active {
+  filter: saturate(109%);
+}
+
+:target {
+  filter: saturate(161%);
+}
+
+.emo {
+  filter: saturate(161%);
+}
+
+.echo {
+  color: darkviolet;
+  text-shadow:
+    1vw 1vh 0 #ee7,
+    -1vw -1vh 0 #ee1;
+}
+
+:any-link {
+  color: indigo;
+  background-color: transparent;
+}
+
+a:hover {
+  background-color: mediumspringgreen;
+}
