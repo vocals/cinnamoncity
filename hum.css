@@ -1,72 +1,69 @@
+* { box-sizing: border-box }
+a { text-underline-offset: 1pc }
+[rel] { font-size: 1.618em }
+[href^="#"] { text-decoration-style: dotted }
+:focus { outline: thick groove }
+.fun { font: unset }
+
 html {
   font-family: sans-serif;
-  font-size: max(2em, 2vmax + 2vmin);
+  font-size: max(26px, 2vmax + 2vmin);
   line-height: 1.618;
 }
 
 body {
-  margin: auto;
+  margin: 0;
   overflow-wrap: anywhere;
 }
 
 article {
   align-items: flex-start;
-  box-sizing: border-box;
   contain: layout;
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
-  margin: auto;
-  min-height: 100vh;  
-  padding: 20vh 10vw;
+  padding: 10vh 10vw;
+}
+
+aside { 
+  contain: layout;
+  display: flex;
+  flex-flow: column;
+  gap: 1ex;
+  margin-bottom: 1em;
+}
+
+footer {
+  margin-block: 3em 1em;
+}
+
+nav {
+  contain: layout;
+  display: flex;
+  gap: 1ch;
+  margin-bottom: 1em;
+}
+
+p { 
+  margin: 0;
+  padding: 1ch 1ex;
 }
 
 h1 {
   font-size: 2.618rem;
-  margin: auto;
-  padding: 1ch; 
-}
-
-em {
-  font: unset;
-}
-  
-@media (orientation: portrait) {
-  h1 {
-    writing-mode: vertical-rl;
-  }
-}
-
-p {
-  box-sizing: border-box;
-  margin-block: 0;
-  margin-inline-end: auto;
-  padding: 1ch;
+  margin: auto auto 1ex;
 }
 
 hr {
   all: unset;
-  display: block;  
+  display: block;
   margin-block: 1em;
 }
 
-footer {
-  margin-block: 5em 1em;
-}
-
-:focus {
-  outline: thick groove;
-}
-
-:hover,
-[href^="#"] {
-  text-decoration-style: dotted;
-}
-
-[href^="#"]:hover {
-  text-decoration-style: solid;
-}
-
-.emo {
-  padding: 1ex;
+@media (orientation: portrait) {
+  h1 {
+    margin-block-end: 10vw;
+    margin-top: 0;
+    margin-bottom: 2ch;
+    writing-mode: vertical-rl;
+  }
 }
